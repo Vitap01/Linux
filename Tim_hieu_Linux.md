@@ -1,0 +1,135 @@
+
+Tìm hiểu Linux
+
+
+
+Lịch sử phát triển	1
+1.1 Unix	1
+1.2 GNU	2
+1.3 Linux	3
+Cấu trúc hệ điều hành Linux	3
+2.1 Kernel ( nhân)	4
+2.2 Shell	4
+2.3 Application	4
+Ưu nhược điểm	5
+Giới thiệu distro	6
+Các Os distro phổ biến hiện nay	6
+*  Ubuntu	7
+*  Kali Linux	8
+*  Centos	9
+*  MX Linux	10
+
+
+Lịch sử phát triển
+1.1 Unix
+Được phát triển bởi hai nhà khoa học máy tính nổi tiếng Ken Thompson và Dennis Ritchie vào những năm 1960. Ritchie đã viết lại ngôn ngữ B, cải thiện nó tốt hơn, để trở thành ngôn ngữ lập trình C ngôn ngữ được sử dụng đến bây giờ. phiên bản đầu tiên của Unix được ra đời vào tháng 3 năm 1971 , tiếp đó là phiên bản thứ 2 ra đời năm 1972.
+Unix cũng có một hệ thống tập tin duy nhất mà các chương trình.sử dụng để giao tiếp với nhau. Đây là lý do tại sao có sự xuất hiện của thuật ngữ “everything is a.file” trên Linux. Điều này bao gồm các thiết bị phần cứng và các tệp đặc biệt cung cấp thông tin hệ thống hoặc dữ liệu khác.
+Các chương trình Unix được thiết kế xung quanh một số triết lý cốt lõi bao gồm các yêu cầu và mục đích như có thể tương tác và làm việc với giao diện văn bản được tiêu chuẩn hóa.
+
+1.2 GNU
+Tháng 9 năm 1983 , Richard Stallman thông báo về sự ra đời của dự án GNU ( GNU là viết tắt của từ GNU's not Unix ).
+Dự án GNU là tạo ra được một hệ điều hành miễn phí , giống Unix , nơi mà mọi người có quyền tự do copy , phát triển , chỉnh sửa và phân phối phần mềm , và việc tái phân phối là không bị giới hạn (Unix ban đầu đều là close source và bị ràng buộc bản quyền)
+GNU vẫn thiếu một thành phần quan trọng , mảnh ghép cuối cùng để nó trở thành một hệ điều hành hoàn chỉnh . Đó chính là Kernel , phần thực hiện công việc điều khiển , giao tiếp với các thiết bị phần cứng ( CPU , RAM , Devices ... ).
+![Imgur](https://i.imgur.com/Z8Lxp9C.png)
+1.3 Linux
+Ngày 25 tháng 8 năm 1991, một cậu sinh viên ở Phần Lan mang tên Linus Torvalds giới thiệu một sản phẩm cá nhân , sau này trở thành Linux Kernel .
+Sự kết hợp giữa nhân Linux , với các phần mềm của GNU đã tạo ra một hệ điều hành hoàn chỉnh , hệ điều hành hoàn toàn miễn phí đầu tiên . Nó được mang tên GNU/Linux
+Hệ điều hành Linux hoàn toàn không sử dụng chung , hay kế thừa bất kỳ phần code nào của Unix.
+
+
+
+Cấu trúc hệ điều hành Linux
+
+2.1 Kernel ( nhân):
+Là phần quan trọng nhất trong máy tính bởi chứa đựng các module hay các thư viện để quản lý, giao tiếp giữa phần cứng máy tính và các ứng dụng.
+Linux kernel có 3 hệ điều hành là được biết đến rộng rãi, bao gồm Debian của Ian Murdock, RedHat của Red Hat Inc. và Slackware của Patrick Volkerding. Hầu hết các hệ điều hành dựa trên Linux đều bắt nguồn hoặc học hỏi từ 3 hệ điều hành này. 
+Cùng dùng chung Linux kernel nhưng không một hệ điều hành nào là giống nhau, mỗi cái có một cách sử dụng và cấu hình riêng cho các phần mềm đi kèm (hầu hết là phần mềm từ dự án GNU/Linux)
+2.2 Shell:
+Shell là phần có chức năng thực thi các lệnh (command) từ người dùng hoặc từ các ứng dụng yêu cầu, chuyển đến cho Kernel xử lý. Shell chính là cầu nối để kết nối Kernel và Application, phiên dịch các lệnh từ Application gửi đến Kernel để thực thi.
+Tóm lại Shell là một trình biên dịch ngôn ngữ người dùng và ngôn ngữ máy
+Các loại Shell phổ biến: sh (the Buorne Shell), bash(Bourne-again shell), csh (C shell), ash (Almquist shell), tsh (TENEX C shell), zsh (Z shell).
+
+2.3 Application
+Phần để người dùng cài đặt ứng dụng, chạy ứng dụng để người dùng có thể phục vụ cho nhu cầu của mình.
+
+Ưu nhược điểm:
+Ưu điểm
+Nhược điểm
+Miễn phí và được hỗ trợ các ứng dụng văn phòng OpenOffice và LibreOffice.
+Tính bảo mật cao.
+Tính linh hoạt, người dùng có thể chỉnh sửa hệ điều hành để phù hợp với nhu cầu sử dụng của mình.
+Không lo sợ giật, lag, không chạy nổi,…
+Các nhà phát triển phần mềm vẫn chưa để tâm đến hệ điều hành tiềm năng này nên số lượng phần mềm được hỗ trợ vẫn còn hạn chế.
+Một số nhà sản xuất không phát triển driver hỗ trợ nền tảng Linux.
+
+ Phân loại:
+Chịu sự ảnh hưởng bởi 3 hệ điều hành là được biết đến rộng rãi, bao gồm Debian của Ian Murdock, RedHat của Red Hat Inc. và Slackware của Patrick Volkerding.hầu hết các hệ điều hành dựa trên Linux đều bắt nguồn hoặc học hỏi từ 3 hệ điều hành này.
+Tuy dùng chung nhân nhưng các distro Linux cũng có những triết lý riêng ví dụ:
+Nhóm 1: là cấu trúc gọn nhẹ, uyển chuyển để có thể xây dựng một hệ thống hoàn toàn tuân theo ý của mình.
+Nhóm 2: lại nhắm đến việc chuẩn hóa, chuyên môn hóa quá trình phát triển phần mềm nhằm tạo ra một hệ thống hoạt động nhịp nhàng, ăn khớp và hạn chế lỗ hổng bảo mật.
+Nhóm 3: phát triển theo hướng bền vững, chuyên nghiệp, cung cấp dịch vụ hỗ trợ dài hạn, cung cấp sản phẩm có vòng đời kéo dài (lên tới 7 năm).
+Nhóm 4: cung cấp những công nghệ mới nhất, những hiệu ứng đồ họa bắt mắt ngay sau khi cài đặt, không cần phải cấu hình nhiều…
+Ngoài 2 yếu tố trên thì còn một số điểm khác nữa ví dụ như các gói phần mềm xung quanh, công cụ quản lý gói, Desktop Environment….:
+Debian thì thường xài Desktop Environment là GNOME, công cụ quản lý gói là apt-get, dpkg..
+Red Hat xài DE là GNOME, công cụ quản lý gói là rpm, yum ..
+ArchLinux thì DE có thể là bất cứ thứ gì, công cụ quản lý gói là pacman, yaourt
+OpenSuse thì có DE là KDE, công cụ quản lý gói là YaST Software Management, Zypper..
+Giới thiệu distro
+Distro là từ viết tắt thay thế cho Linux Distribution - bản phân phối của Linux - là một hệ điều hành được tập hợp từ nhiều phần mềm dựa trên nhân Linux (Linux Kernel) và thường có một hệ thống quản lý các gói tin.
+Thành phần: Một bản distro điển hình bao gồm: một kernel Linux, các công cụ và thư viện GNU, các phần mềm thêm vào, phần document, một hệ thống window system (mà phần lớn là sử dụng X Window System - hệ thống cửa sổ dùng để hiển thị đồ họa Bitmap), window manager và desktop environment.
+Hiện tại, có khoảng 600 bản distro tồn tại, với gần 500 trong số đó phát triển tích cực, liên tục được sửa đổi và cải thiện. Bởi sự sẵn có của số lượng lớn phần mềm, distro khá là đa dạng về hình thức - phù hợp với từ desktop, server, laptop, netbooks, điện thoại di động, máy tính bảng cũng như môi trường tối thiểu thường để sử dụng trong các hệ thống nhúng.
+Có nhiều bản phân phối thương mại như Fedora (Red hat), OpenSUSE (SUSE), Ubuntu (Canonical Ltd); và hoàn toàn phân phối dựa vào cộng đồng như Debian, Slackware, Gentoo hay Arch Linux.
+
+Các Os distro phổ biến hiện nay
+Các distro phổ biến và phát triển bền vững hiện nay có thể được chia thành 4 nhóm:
+Arch (archlinux.org), Gentoo (gentoo.org), Slackware (slackware.com): Các distro nhắm vào người dùng am hiểu về hệ thống Linux. Hầu hết phương thức xây dựng và cấu hình hệ thống đều phải thực hiện qua môi trường dòng lệnh.
+Debian (debian.org), Fedora (fedoraproject.org): Các distro cũng nhắm vào những người dùng am hiểu hệ thống, tuy nhiên cung cấp nhiều công cụ hơn cho những người chưa thật sự hiểu rõ hoàn toàn về Linux.
+Centos (centos.org), RHEL (redhat.com/rhel), SUSE EL (novell.com/linux): Các distro này chủ yếu nhắm vào thị trường doanh nghiệp, cơ quan, thị trường máy chủ
+Ubuntu (ubuntu.com), Open SUSE (opensuse.org) Linux Mint (linuxmint.com): Nhóm các distro nhắm đến người dùng cuối và người mới bắt đầu sử dụng Linux.
+Có rất nhiều bản phân phối của Linux phổ biến như Ubuntu, kali linux, centos,... (danh sách hàng trăm Distro phổ biến nhất gần đây tại distrowatch).
+
+
+*  Ubuntu
+
+- Do công ty Canonical phân phối chỉ mới xuất hiện vào quý 3/2004 và không lâu sau đó HĐH này đã trở nên phổ biến, uy tín về chất lượng và dễ dàng sử dụng.
+- Dựa trên hệ thống quản lý gói mạnh mẽ APT của Debian, nhắm đến đối tượng người dùng đầu cuối, nhỏ gọn chỉ với 1 đĩa cài đặt. Người dùng Ubuntu có thể cảm nhận được sự tự do, tùy biến cao trong sử dụng, quản lý hệ thống.
+- Cứ 6 tháng, Ubuntu sẽ ra bản phát hành mới, còn với các phiên bản Long Term Support (LTS) thì việc cập nhật trình bảo mật sẽ từ 3 đến 5 năm.
+- Ubuntu sử dụng giao diện đồ họa thân thiện GNOME, hướng đến sự đơn giản hóa trong quá trình sử dụng. Ngoài ra, Ubuntu còn có bộ ứng dụng văn phòng OpenOffice, trình duyệt Firefox, trình gửi tin nhắn tức thời Pidgin, trình biên tập đồ họa GIMP…
+- Ngoài Ubuntu, các nhà phát triển còn sản sinh ra các distro cho dòng máy yếu hơn mang hơi hướng tương tự Ubuntu như Kubuntu, Xubuntu và Lunbuntu, Linux Mint. Các distro này chủ yếu khác biệt với Ubuntu ở giao diện màn hình.
+- Cài đặt phần mềm dễ dàng với Snaps, cộng đồng người dùng là vô cùng đông đảo. Tóm lại, Ubuntu là hệ điều hành đa nhiệm, xử lý hiệu quả các công việc của bạn.
+
+*  Kali Linux
+
+Hiển nhiên Kali Linux không có đối thủ trong mảng hacking. Nó có vô số các công cụ như: phân tích khả năng dễ xâm nhập, tấn công wifi, testing, v.v… Là một nhánh của Debian Testing nên hầu hết các gói tin của Kali Linux là từ Debian.
+
+Kali NetHunter là một điểm thú vị, cho phép cài Kali Linux trên các thiết bị nhúng, điện thoại thông minh như Raspberry Pi, Chromebook, điện thoại Android v.v…
+
+Bạn hãy chọn Linux vì: 
+Rất nhiều công cụ hỗ trợ hacking
+Hệ điều hành gốc Debian
+Có nhiều tài liệu, hướng dẫn về distro này
+*  Centos
+          
+
+
+Tính ổn định, ổn định và ổn định. Đây là thứ tối cần thiết nhất cho máy chủ: không được có bất kỳ lỗi giữa chừng nào. Có ngay CentOS cho bạn, một hệ điều hành ổn định, bảo mật, hỗ trợ phần cứng tốt, tối ưu hóa công suất và hiệu năng. Có nhiều lựa chọn khác (xem thêm tại đây) có cả miễn phí và trả phí, tuy nhiên CentOS là lựa chọn khuyên dùng.
+
+RHEL (Red Hat Enterprise Linux) là hệ điều hành được sử dụng rộng rãi cho server. Còn CentOS là đối với nặng ký nhất với RHEL, và nó miễn phí hoàn toàn. Bạn có thể dùng CentOS cho server hoặc cho máy tính cá nhân với những tác vụ hàng ngày, đều rất phù hợp.
+
+Tại sao nên chọn CentOS cho server?
+
+Phiên bản miễn phí thay thế cho RHEL
+Hỗ trợ lâu dài, cộng đồng người dùng đông đảo
+Tính ổn định cao
+
+*  MX Linux
+
+Đứng đầu bảng thống kê của distrowatch trong 12 tháng trở lại đây. MX Linux là hệ điều hành nhánh Debian, sử dụng DE (môi trường desktop) là Xfce – một DE “siêu mỏng nhẹ”, với mục tiêu thu hút người dùng đang sử dụng windows.
+Tại sao nên thay thế cho windows:
+Giao diện gọn gàng, nhanh chóng cài đặt
+Có tùy chọn cài đặt portable, thuận tiện cho di chuyển
+Là một Linux distro độc đáo, đa dụng
+
+Tài liệu tham khảo: https://github.com/nhanhoadocs/thuctapsinh/blob/b6e69a21ac6e7aa536a630ae6f1a410ae6a23fcf/CuongNQ/Basic%20Linux/01_Unix_GNU_Linux.md
+
+
