@@ -23,7 +23,7 @@
 
     ![Imgur](https://i.imgur.com/FbAGoEb.png)
 
-    
+
 ### 1.3 ```/etc/resolv.conf```
 - Dùng để cấu hình DNS
 ![Imgur](https://i.imgur.com/uwqlQyV.png)
@@ -34,6 +34,8 @@
   ``` #vi etc/sysconfig/network-scripts/ifcfg-[tên_card_mạng]```
 
 ![Imgur](https://i.imgur.com/HGgfHLW.png)
+
+
 - Ý nghĩa các thông số trong file :
     - ```DEVICE``` : tên của card mạng
     - ````ONBOOT```` :
@@ -61,9 +63,17 @@ DNS1=8.8.8.8
 DNS2=8.8.4.4
 USERCTL=no
 ```
+
+
 ![Imgur](https://i.imgur.com/o5FQTl8.png)
+
+
         - sau khi restart lại mạng
+
+
   ![Imgur](https://i.imgur.com/FVEUid6.png)
+
+
 
 - VD : Thiết lập IP động
 
@@ -76,13 +86,25 @@ USERCTL=no
 ### 2.2 Cấu hình bằng giao diện GUI
 - trong giao diên terminal gõ ``` #nmtui ```
 - Cửa sổ NetworkManager TUI hiện ra , chọn Edit a connection => OK
+
+
   ![Imgur](https://i.imgur.com/omFsT66.png)
+
+
 -  Chọn Card mạng cần đặt IP (ens33):
   ![Imgur](https://i.imgur.com/29FZg0v.png)
 - Chọn IPV4 CONFIGURATION => Manual => < show >
+
+
   ![Imgur](https://i.imgur.com/cGCG3pi.png)
+
+
 - Đặt các thông số IP => OK
+
+
+
   ![Imgur](https://i.imgur.com/dTTnIju.png)
+
 ## 3. Cấu hình bằng ``` nmcli```
 - Đây là công cụ giúp điều khiển trình quản lý mạng trong Linux bằng dòng lệnh .
 - Xem các trạng thái kết nối cơ bản :
@@ -110,9 +132,18 @@ USERCTL=no
 
 - Cấu hình IP tĩnh bằng nmcli
     - Hiển thị các thiết bị mạng đang mở:  ```#nmcli dev```
+
+
+
 ![Imgur](https://i.imgur.com/eQdoKnA.png)
+
+
     - kiẻm tra mạng: ``` #ip a ```
+
+
 ![Imgur](https://i.imgur.com/DAmlmQJ.png)
+
+
     - cấu hình mạng ens37 theo thông số:
         - IP static : 192.168.177.176
         - Gateway : 192.168.177.2
