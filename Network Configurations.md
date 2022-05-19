@@ -92,11 +92,16 @@ USERCTL=no
 
 
 -  Chọn Card mạng cần đặt IP (ens33):
+
+
   ![Imgur](https://i.imgur.com/29FZg0v.png)
+
+
 - Chọn IPV4 CONFIGURATION => Manual => < show >
 
 
   ![Imgur](https://i.imgur.com/cGCG3pi.png)
+  
 
 
 - Đặt các thông số IP => OK
@@ -144,11 +149,15 @@ USERCTL=no
 ![Imgur](https://i.imgur.com/DAmlmQJ.png)
 
 
-    - cấu hình mạng ens37 theo thông số:
-        - IP static : 192.168.177.176
-        - Gateway : 192.168.177.2
-        - Subnet Mask : 255.255.255.0
-        - DNS : 8.8.4.4
+  - Cấu hình mạng ens37 theo thông số:
+       
+       
+         - IP static: 192.168.177.176
+         - Gateway: 192.168.177.2
+         - Subnet Mask: 255.255.255.0
+         - DNS: 8.8.4.4
+
+           
 
 
 ```
