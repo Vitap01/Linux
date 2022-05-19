@@ -15,11 +15,15 @@
     - lo*: loopback (có sẵn)
     - bridge: (có sẵn)
     - ww* : wwan ( wireless WAN - 3G/4G )
+
 ![Imgur](https://i.imgur.com/eQckPqp.png)
 ### 1.2 ``` /etc/hosts```
 - Dùng để phân giải những hostname không thể phân giải được.
 - Có thể dùng thay DNS trong hệ thống mạng LAN
+
     ![Imgur](https://i.imgur.com/FbAGoEb.png)
+
+    
 ### 1.3 ```/etc/resolv.conf```
 - Dùng để cấu hình DNS
 ![Imgur](https://i.imgur.com/uwqlQyV.png)
