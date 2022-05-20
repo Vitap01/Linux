@@ -5,3 +5,9 @@
 [3.Cấu trúc file system trên linux](3.Cấu%20trúc%20file%20system%20trên%20linux.md)
 
 [4.Text Commands - Lệnh Văn Bản](4.Text%20Commands%20-%20Lệnh%20Văn%20Bản.md)
+
+[5.Network configirations](5.Network%20Configurations.md)
+
+[6.Text editors Vi](6.Text%20Editors%20Vi%20(Vim).md)
+
+[7.FTP file client to Server.md](7.FTP%20file%20client%20to%20Server.md)
