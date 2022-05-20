@@ -181,7 +181,7 @@ nmcli con mod ens37 ipv4.dns 8.8.4.4
 
 ## 4. Các câu lệnh network cơ bản
 ### 4.1 Xem địa chỉ IP
-```sh
+```
 # ifconfig       ( Ethernet + Loopback )
 # iwconfig       ( Wifi )
 # ifconfig -a    ( đầy đủ thông tin )
@@ -194,19 +194,19 @@ nmcli con mod ens37 ipv4.dns 8.8.4.4
 
 
 ### 4.2 Tắt bật card mạng
-```sh
+```
 # ifup [tên_card_mạng]       : bật card mạng
 # ifdown [tên_card_mạng]     : tắt card mạng
 ```
 ### 4.3 khởi động lại ```network-service```
-```sh
+```
     # service network restart
 <=> # /etc/init.d/network restart
 <=> # systemctl restart network.service
 ```
 
-### 4.4 Xem thông tin gateway
-```sh
+### 4.4 Xem thông tin gateway 
+```
 # route
 # ip route
 ```
