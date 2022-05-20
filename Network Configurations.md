@@ -1,12 +1,18 @@
-# Network Configurations- [Network Configurations](#network-configurations)
+# Network Configur- [Network Configurations- Network Configurations](#network-configurations--network-configurations)
   - [1. Các file cấu hình mạng](#1-các-file-cấu-hình-mạng)
     - [1.1 ``` /etc/sysconfig/network-scripts/ifcfg-[tên_card_mạng] ```](#11-etcsysconfignetwork-scriptsifcfg-tên_card_mạng)
     - [1.2 ``` /etc/hosts```](#12--etchosts)
     - [1.3 ```/etc/resolv.conf```](#13-etcresolvconf)
   - [2. Cấu hình IP](#2-cấu-hình-ip)
     - [2.1 Cấu hình bằng file](#21-cấu-hình-bằng-file)
-    - [2.2 Cấu hình bằng giao diện GUIGUI](#22-cấu-hình-bằng-giao-diện-guigui)
+    - [2.2 Cấu hình bằng giao diện GUI](#22-cấu-hình-bằng-giao-diện-gui)
   - [3. Cấu hình bằng ``` nmcli```](#3-cấu-hình-bằng--nmcli)
+  - [4. Các câu lệnh network cơ bản](#4-các-câu-lệnh-network-cơ-bản)
+    - [4.1 Xem địa chỉ IP](#21-xem-địa-chỉ-ip)
+    - [4.2 Tắt bật card mạng](#22-tắt-bật-card-mạng)
+    - [4.3 khởi động lại ```network-service```](#23-khởi-động-lại-network-service)
+    - [4.4 Xem thông tin gateway](#24-xem-thông-tin-gateway)ations- [Network Configurations](#network-configurations)
+ 
 ## 1. Các file cấu hình mạng
 ### 1.1 ``` /etc/sysconfig/network-scripts/ifcfg-[tên_card_mạng] ``` 
 - Chưa thông tin cấu hình của từng card mạng mạng
@@ -143,7 +149,7 @@ USERCTL=no
 ![Imgur](https://i.imgur.com/eQdoKnA.png)
 
 
-    - kiẻm tra mạng: ``` #ip a ```
+ kiểm tra mạng: ```#ip a```
 
 
 ![Imgur](https://i.imgur.com/DAmlmQJ.png)
@@ -166,4 +172,61 @@ nmcli con mod ens37 ipv4.gateway 192.168.177.2
 nmcli con mod ens37 ipv4.method manual 
 nmcli con mod ens37 ipv4.dns 8.8.4.4
 ```
-  kết quả: ![Imgur](https://i.imgur.com/vMvogg9.png)
+  kết quả:
+  
+  
+  
+   ![Imgur](https://i.imgur.com/vMvogg9.png)
+
+
+## 4. Các câu lệnh network cơ bản
+### 4.1 Xem địa chỉ IP
+```sh
+# ifconfig       ( Ethernet + Loopback )
+# iwconfig       ( Wifi )
+# ifconfig -a    ( đầy đủ thông tin )
+# ip a s         ( đầy đủ thông tin )
+```
+
+
+![Imgur](https://i.imgur.com/Ox2tQTO.png)
+
+
+
+### 4.2 Tắt bật card mạng
+```sh
+# ifup [tên_card_mạng]       : bật card mạng
+# ifdown [tên_card_mạng]     : tắt card mạng
+```
+### 4.3 khởi động lại ```network-service```
+```sh
+    # service network restart
+<=> # /etc/init.d/network restart
+<=> # systemctl restart network.service
+```
+
+### 4.4 Xem thông tin gateway
+```sh
+# route
+# ip route
+```
+
+
+
+
+
+
+- [Network Configur- Network Configurations- Network Configurations](#network-configur--network-configurations--network-configurations)
+  - [1. Các file cấu hình mạng](#1-các-file-cấu-hình-mạng)
+    - [1.1 ``` /etc/sysconfig/network-scripts/ifcfg-[tên_card_mạng] ```](#11-etcsysconfignetwork-scriptsifcfg-tên_card_mạng)
+    - [1.2 ``` /etc/hosts```](#12--etchosts)
+    - [1.3 ```/etc/resolv.conf```](#13-etcresolvconf)
+  - [2. Cấu hình IP](#2-cấu-hình-ip)
+    - [2.1 Cấu hình bằng file](#21-cấu-hình-bằng-file)
+    - [2.2 Cấu hình bằng giao diện GUI](#22-cấu-hình-bằng-giao-diện-gui)
+  - [3. Cấu hình bằng ``` nmcli```](#3-cấu-hình-bằng--nmcli)
+  - [4. Các câu lệnh network cơ bản](#4-các-câu-lệnh-network-cơ-bản)
+    - [4.1 Xem địa chỉ IP](#41-xem-địa-chỉ-ip)
+    - [4.2 Tắt bật card mạng](#42-tắt-bật-card-mạng)
+    - [4.3 khởi động lại ```network-service```](#43-khởi-động-lại-network-service)
+    - [4.4 Xem thông tin gateway](#44-xem-thông-tin-gateway)
