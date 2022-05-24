@@ -11,3 +11,5 @@
 [6.Text editors Vi](6.Text%20Editors%20Vi%20(Vim).md)
 
 [7.FTP file client to Server.md](7.FTP%20file%20client%20to%20Server.md)
+
+[8. Tìm hiểu SSH với linux.md](8.%20Tìm%20hiểu%20SSH%20với%20linux.md)
