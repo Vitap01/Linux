@@ -18,3 +18,5 @@
 [9.User and Group](9.Users%20and%20Group.md)
 
 [10.File Permissions](10.File%20Permissions.md)
+
+[11.Thiết lập máy chủ ban đầu với CentOS 7](11.Thiết%20lập%20máy%20chủ%20ban%20đầu%20với%20CentOS%207.md)
