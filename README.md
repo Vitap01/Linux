@@ -20,3 +20,5 @@
 [10.File Permissions](10.File%20Permissions.md)
 
 [11.Thiết lập máy chủ ban đầu với CentOS 7](11.Thiết%20lập%20máy%20chủ%20ban%20đầu%20với%20CentOS%207.md)
+
+[12.Basic Unix tools](12.Basic%20Unix%20tools.md)
