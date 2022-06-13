@@ -11,7 +11,7 @@
 
 ![imgul](https://blog.kdata.vn/wp-content/uploads/2020/10/web-server-apache-va-nginx-la-gi-so-sanh-uu-nhuoc-diem-cai-nao-tot-6.jpg)
 
-| STT | Nginx | Apache |
+|  | Nginx | Apache |
 |-----|------------|------------|
 | Ưu Điểm | Khả năng xử lý cao, cùng một lúc hơn 10.000 kết nối với bộ nhớ thấp.| Apache là phần mềm miễn phí mã nguồn mở, có độ ổn định và đáng tin cậy. |
 |  |Phục vụ Static Files và lập chỉ mục cho tập tin.| Cấu hình đơn giản và thân thiện dù bạn là những người mới bắt đầu làm quen với ứng dụng này.|
