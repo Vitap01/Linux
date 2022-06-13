@@ -3,7 +3,7 @@
 
 ![Imgur](https://i.imgur.com/DX0wxsm.png)
 
-- SSL là viết tắt của từ Secure Sockets Layer, llà một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết được mã hóa giữa máy chủ website và trình duyệt.
+- SSL là viết tắt của từ Secure Sockets Layer, là một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết được mã hóa giữa máy chủ website và trình duyệt.
 -  Hiện tại TLS (Transport Layer Security: "Bảo mật tầng giao vận") đã thay thế cho SSL (Secure Sockets Layer: "Tầng socket bảo mật")
 -  Về cơ bản chứng chỉ SSL có 1 cặp key-pair : 1 public key và 1 private key . Chúng hoạt động cùng nhau để tạo ra kết nối mã hóa và cũng bao gồm 1 phần gọi là "subject" , dùng để nhận biết chủ sở hữu của webste/certificate .
 -  HTTPS là phần mở rộng bảo mật của HTTP . Website được cài đặt chứng chỉ SSL/TLS có thể dùng giao thức HTTPS để thiết lập kênh kết nối an toàn tới server . HTTPS sử dụng port 443/tcp .
@@ -38,7 +38,7 @@
         > `Common Name` là dòng quan trọng nhất , nếu có domain name thì ghi domain name , nếu không thì thay thế bằng IP Public
 - Bước 4 : Thêm virtual host cho website HTTPS :
     ```
-    # vi /etc/httpd/conf.d/ssl.conf
+    vi /etc/httpd/conf.d/ssl.conf
     ```
     - Tại dòng `59` , bỏ dấu `#` ở đầu dòng :
 
@@ -54,10 +54,10 @@
 
 - Bước 5 : Cho phép dịch vụ **HTTPS** trên **firewalld** :
     ```
-    # firewall-cmd --zone=public --permanent --add-service=https
-    # firewall-cmd --reload
+    firewall-cmd --zone=public --permanent --add-service=https
+    firewall-cmd --reload
     ```
-- B6 : Khởi động lại dịch vụ `httpd` :
+- Bước 6 : Khởi động lại dịch vụ `httpd` :
     ```
     systemctl restart httpd
     ```
