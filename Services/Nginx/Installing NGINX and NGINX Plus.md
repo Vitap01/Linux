@@ -78,3 +78,5 @@ $ curl -I 127.0.0.1
 HTTP/1.1 200 OK
 Server: nginx/1.13.8
 ```
+
+![Imgur](https://i.imgur.com/f9w03iO.png)
