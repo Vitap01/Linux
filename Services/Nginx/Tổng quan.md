@@ -14,10 +14,8 @@
 | STT | Nginx | Apache |
 |-----|------------|------------|
 | Ưu Điểm | Khả năng xử lý cao, cùng một lúc hơn 10.000 kết nối với bộ nhớ thấp.| Apache là phần mềm miễn phí mã nguồn mở, có độ ổn định và đáng tin cậy. |
-|  |Phục vụ Static Files và lập chỉ mục cho tập tin.| Cấu hình đơn giản và thân thiện dù bạn là những người mới bắt đầu làm quen với ứng dụng này.
-|
-|  |Dùng bộ nhớ đệm cache để tăng tốc proxy ngược, cân bằng tải đơn giản và khả năng chịu lỗi.|Phần mềm được cập nhật thường xuyên, phát hiện và báo lỗi liên tục nhằm giúp người dùng ngăn chặn kịp thời, không để thông tin bị đánh cắp.
-| 
+|  |Phục vụ Static Files và lập chỉ mục cho tập tin.| Cấu hình đơn giản và thân thiện dù bạn là những người mới bắt đầu làm quen với ứng dụng này.|
+|  |Dùng bộ nhớ đệm cache để tăng tốc proxy ngược, cân bằng tải đơn giản và khả năng chịu lỗi.|Phần mềm được cập nhật thường xuyên, phát hiện và báo lỗi liên tục nhằm giúp người dùng ngăn chặn kịp thời, không để thông tin bị đánh cắp.| 
 |  | Hỗ trợ tăng tốc với bộ nhớ đệm của WSGI, SCGI, FastCGI và các máy chủ Memcached.|Cộng đồng sử dụng Apache lớn nên có thể tương trợ và giải đáp thắc mắc của bạn bất kỳ lúc nào.
 | |Các thể thức cấu trúc Module linh hoạt, Apache hoạt động hiệu quả và nhanh nhạy hơn với WordPress sites.  |
 |  |Có cấu hình linh hoạt và khả năng lưu lại nhật ký truy vấn.
