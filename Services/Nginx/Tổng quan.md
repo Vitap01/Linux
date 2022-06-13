@@ -1,0 +1,34 @@
+# NGINX
+## Tổng quan
+- Là một máy chủ web cũng có thể được sử dụng làm proxy ngược , bộ cân bằng tải , proxy bộ nhớ cache HTTP . Phần mềm được tạo ra bởi Igor Sysoev và phát hành công khai vào năm 2004.  
+- Nginx là phần mềm mã nguồn mở và miễn phí , được phát hành theo các điều khoản của BSD. Một phần lớn các máy chủ web sử dụng Nginx, thường xuyên như một bộ cân bằng tải.
+- Việc sử dụng Docker cho thấy rằng Nginx là công nghệ được triển khai phổ biến nhất trong các vùng chứa Docker.
+
+![imgul](https://news.cloud365.vn/wp-content/uploads/2020/01/what-is-nginx.png)
+
+## So sánh Apache và Nginx
+
+
+![imgul](https://blog.kdata.vn/wp-content/uploads/2020/10/web-server-apache-va-nginx-la-gi-so-sanh-uu-nhuoc-diem-cai-nao-tot-6.jpg)
+
+| STT | Nginx | Apache |
+|-----|------------|------------|
+| Ưu Điểm | Khả năng xử lý cao, cùng một lúc hơn 10.000 kết nối với bộ nhớ thấp.| Apache là phần mềm miễn phí mã nguồn mở, có độ ổn định và đáng tin cậy. |
+|  |Phục vụ Static Files và lập chỉ mục cho tập tin.| Cấu hình đơn giản và thân thiện dù bạn là những người mới bắt đầu làm quen với ứng dụng này.
+|
+|  |Dùng bộ nhớ đệm cache để tăng tốc proxy ngược, cân bằng tải đơn giản và khả năng chịu lỗi.|Phần mềm được cập nhật thường xuyên, phát hiện và báo lỗi liên tục nhằm giúp người dùng ngăn chặn kịp thời, không để thông tin bị đánh cắp.
+| 
+|  | Hỗ trợ tăng tốc với bộ nhớ đệm của WSGI, SCGI, FastCGI và các máy chủ Memcached.|Cộng đồng sử dụng Apache lớn nên có thể tương trợ và giải đáp thắc mắc của bạn bất kỳ lúc nào.
+| |Các thể thức cấu trúc Module linh hoạt, Apache hoạt động hiệu quả và nhanh nhạy hơn với WordPress sites.  |
+|  |Có cấu hình linh hoạt và khả năng lưu lại nhật ký truy vấn.
+ |  |
+|  |Chuyển hướng lỗi 3XX – 5XX.
+ |  |
+|  |Hạn chế tỷ lệ đáp ứng truy vấn.
+ |  |
+|  |Có khả năng nhúng mã PERL.
+ |  |
+|  |Hỗ trợ WebSockets.
+ |  |
+| Nhược Điểm | Hỗ trợ Windows nhưng hiệu suất thì không được mạnh bằng Apache | Thỉnh thoảng chậm hay gặp trục trặc trong quá trình truy vấn bởi có rất nhiều người truy cập Apache cùng một lúc.
+|   |  | Khả năng bảo mật đôi khi còn chưa hiệu quả do tính miễn phí|
