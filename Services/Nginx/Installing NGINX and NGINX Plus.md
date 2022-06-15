@@ -6,8 +6,8 @@
       - [Cài đặt kho lưu trữ EPEL:](#cài-đặt-kho-lưu-trữ-epel)
       - [Cài đặt Gói `CentOS / RHEL` dựng sẵn từ Kho lưu trữ NGINX Chính thức](#cài-đặt-gói-centos--rhel-dựng-sẵn-từ-kho-lưu-trữ-nginx-chính-thức)
     - [Installing Prebuilt `Debian` Packages](#installing-prebuilt-debian-packages)
-    - [Cài đặt gói Ubuntu dựng sẵn từ kho lưu trữ Ubuntu](#cài-đặt-gói-ubuntu-dựng-sẵn-từ-kho-lưu-trữ-ubuntu)
-    - [Cài đặt Gói Ubuntu dựng sẵn từ Kho lưu trữ NGINX Chính thức](#cài-đặt-gói-ubuntu-dựng-sẵn-từ-kho-lưu-trữ-nginx-chính-thức)
+    - [Installing a Prebuilt `Ubuntu` Package from an Ubuntu Repository](#installing-a-prebuilt-ubuntu-package-from-an-ubuntu-repository)
+    - [Installing a Prebuilt `Ubuntu` Package from the Official NGINX Repository](#installing-a-prebuilt-ubuntu-package-from-the-official-nginx-repository)
 ## Overview
 - Nginx Plus là phiên bản trả phí của Nginx sử dụng cùng một mã nguồn mở miễn phí NGINX Plus hỗ trợ một số phần mở rộng khác
 
@@ -148,7 +148,7 @@ HTTP/1.1 200 OK
 Server: nginx/1.13.8
 ```
 
-### Cài đặt gói Ubuntu dựng sẵn từ kho lưu trữ Ubuntu
+### Installing a Prebuilt `Ubuntu` Package from an Ubuntu Repository
 -  Cập nhật thông tin kho lưu trữ Ubuntu:
 ```
 $ sudo apt-get update
@@ -162,7 +162,7 @@ Xác minh cài đặt:
 $ sudo nginx -v
 nginx version: nginx/1.4.6 (Ubuntu)
 ```
-### Cài đặt Gói Ubuntu dựng sẵn từ Kho lưu trữ NGINX Chính thức
+### Installing a Prebuilt `Ubuntu` Package from the Official NGINX Repository
 -   Tải xuống khóa được sử dụng để ký các gói NGINX và kho lưu trữ, và thêm nó vào aptvòng khóa của chương trình:
 ```
 $ sudo wget https://nginx.org/keys/nginx_signing.key
