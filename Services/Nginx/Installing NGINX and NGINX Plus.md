@@ -1,4 +1,13 @@
 # Installing NGINX and NGINX Plus
+- [Installing NGINX and NGINX Plus](#installing-nginx-and-nginx-plus)
+  - [Overview](#overview)
+  - [Installing NGINX Open Source](#installing-nginx-open-source)
+    - [Installing a Prebuilt CentOS/RHEL Package from an OS Repository](#installing-a-prebuilt-centosrhel-package-from-an-os-repository)
+      - [Cài đặt kho lưu trữ EPEL:](#cài-đặt-kho-lưu-trữ-epel)
+      - [Cài đặt Gói `CentOS / RHEL` dựng sẵn từ Kho lưu trữ NGINX Chính thức](#cài-đặt-gói-centos--rhel-dựng-sẵn-từ-kho-lưu-trữ-nginx-chính-thức)
+    - [Installing Prebuilt `Debian` Packages](#installing-prebuilt-debian-packages)
+    - [Cài đặt gói Ubuntu dựng sẵn từ kho lưu trữ Ubuntu](#cài-đặt-gói-ubuntu-dựng-sẵn-từ-kho-lưu-trữ-ubuntu)
+    - [Cài đặt Gói Ubuntu dựng sẵn từ Kho lưu trữ NGINX Chính thức](#cài-đặt-gói-ubuntu-dựng-sẵn-từ-kho-lưu-trữ-nginx-chính-thức)
 ## Overview
 - Nginx Plus là phiên bản trả phí của Nginx sử dụng cùng một mã nguồn mở miễn phí NGINX Plus hỗ trợ một số phần mở rộng khác
 
