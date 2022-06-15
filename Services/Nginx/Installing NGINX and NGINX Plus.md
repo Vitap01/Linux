@@ -28,7 +28,7 @@ Xác minh cài đặt:
 $ sudo nginx -v
 nginx version: nginx/1.6.3
 ```
-### Cài đặt Gói CentOS / RHEL dựng sẵn từ Kho lưu trữ NGINX Chính thức
+#### Cài đặt Gói `CentOS / RHEL` dựng sẵn từ Kho lưu trữ NGINX Chính thức
 
 - Thiết lập yumkho lưu trữ cho RHEL hoặc CentOS bằng cách tạo tệp `nginx.repo` trong `/etc/yum.repos.d` , ví dụ bằng cách sử dụng vi:
 ```
@@ -82,3 +82,59 @@ Server: nginx/1.13.8
 ![Imgur](https://i.imgur.com/f9w03iO.png)
 
 ![Imgur](https://i.imgur.com/Mon8iY4.png)
+
+### Installing Prebuilt `Debian` Packages
+
+-  Cập nhật thông tin kho lưu trữ Debian:
+```
+$ sudo apt-get update
+```
+- Cài đặt gói Nguồn mở NGINX:
+```
+$ sudo apt-get install nginx
+```
+- Xác minh cài đặt:
+```
+$ sudo nginx -v
+nginx version: nginx/1.6.2
+```
+- Cài đặt Gói Debian dựng sẵn từ Kho lưu trữ NGINX Chính thức
+- Tải xuống khóa được sử dụng để ký các gói NGINX và kho lưu trữ, và thêmm khoá
+```
+$ sudo wget https://nginx.org/keys/nginx_signing.key
+$ sudo apt-key add nginx_signing.key
+```
+- chỉnh sử tệp `/etc/apt/sources.list`  với trình soạn thảo Vi
+```
+$ sudo vi /etc/apt/sources.list
+```
+- Thêm các dòng này vào `sources.list` để đặt tên cho các kho lưu trữ mà từ đó Nguồn mở NGINX có thể được lấy:
+```
+deb https://nginx.org/packages/mainline/debian/ <CODENAME> nginx
+deb-src https://nginx.org/packages/mainline/debian/ <CODENAME> nginx
+```
+  - Mô tả
+    -   Phần /mainlinetử trong tên đường dẫn trỏ đến phiên bản dòng chính mới nhất của NGINX Open Source; xóa nó để có phiên bản ổn định mới nhất
+    -   <CODENAME>là tên mã của bản phát hành Debian
+-   Ví dụ: để tải gói dòng chính mới nhất cho Debian 8.2 (“jessie”), sử dụng:
+```
+deb https://nginx.org/packages/mainline/debian/ jessie nginx
+deb-src https://nginx.org/packages/mainline/debian/ jessie nginx
+```
+-  Lưu các thay đổi và thoát vi
+- Cài đặt gói Nginx
+```
+$ sudo apt-get remove nginx-common
+$ sudo apt-get update
+$ sudo apt-get install nginx
+```
+- Khởi động Nguồn mở NGINX:
+```
+$ sudo nginx
+```
+- Xác minh rằng Nguồn mở NGINX đang hoạt động:
+```
+$ curl -I 127.0.0.1
+HTTP/1.1 200 OK
+Server: nginx/1.13.8
+```
