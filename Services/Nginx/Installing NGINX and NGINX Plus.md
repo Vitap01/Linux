@@ -138,3 +138,57 @@ $ curl -I 127.0.0.1
 HTTP/1.1 200 OK
 Server: nginx/1.13.8
 ```
+
+### Cài đặt gói Ubuntu dựng sẵn từ kho lưu trữ Ubuntu
+-  Cập nhật thông tin kho lưu trữ Ubuntu:
+```
+$ sudo apt-get update
+```
+Cài đặt gói:
+```
+$ sudo apt-get install nginx
+```
+Xác minh cài đặt:
+```
+$ sudo nginx -v
+nginx version: nginx/1.4.6 (Ubuntu)
+```
+### Cài đặt Gói Ubuntu dựng sẵn từ Kho lưu trữ NGINX Chính thức
+-   Tải xuống khóa được sử dụng để ký các gói NGINX và kho lưu trữ, và thêm nó vào aptvòng khóa của chương trình:
+```
+$ sudo wget https://nginx.org/keys/nginx_signing.key
+$ sudo apt-key add nginx_signing.key
+```
+Chỉnh sửa tệp /etc/apt/sources.list ,với vi:
+```
+$ sudo vi /etc/apt/sources.list
+```
+- Thêm các dòng này `sources.list` để đặt tên cho các kho lưu trữ mà từ đó nguồn Nguồn mở NGINX có thể được lấy:
+```
+deb https://nginx.org/packages/mainline/ubuntu/ <CODENAME> nginx
+deb-src https://nginx.org/packages/mainline/ubuntu/ <CODENAME> nginx
+```
+ - Với
+    -  Phần /mainline : đường dẫn trỏ đến phiên bản dòng chính mới nhất của NGINX Open Source; xóa nó để có phiên bản ổn định mới nhất
+    - `<CODENAME>`là tên mã của bản phát hành Ubuntu
+Ví dụ: để tải gói dòng mới nhất cho Ubuntu 14.04 , sử dụng:
+```
+deb https://nginx.org/packages/mainline/ubuntu/ trusty nginx
+deb-src https://nginx.org/packages/mainline/ubuntu/ trusty nginx
+```
+-   Lưu các thay đổi và thoát vi
+
+-   Cài đặt mã nguồn mở NGINX:
+```
+$ sudo apt-get install nginx
+```
+- Khởi động Nguồn mở NGINX:
+```
+$ sudo nginx
+```
+- Xác minh rằng Nguồn mở NGINX đang hoạt động:
+```
+$ curl -I 127.0.0.1
+HTTP/1.1 200 OK
+Server: nginx/1.13.8
+```
