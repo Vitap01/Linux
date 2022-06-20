@@ -143,3 +143,6 @@ echo 'Luc Tuan Nam aka Vitap Apache server test NGINX-Proxy' >> /var/www/html/in
 - Kết quả:
 
 ![Imgur](https://i.imgur.com/BLTvtXo.png)
+
+Tài liệu tham khảo :
+https://www.server-world.info/en/note?os=CentOS_7&p=nginx&f=6
