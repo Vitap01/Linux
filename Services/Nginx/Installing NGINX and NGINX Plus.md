@@ -8,6 +8,9 @@
     - [Installing Prebuilt `Debian` Packages](#installing-prebuilt-debian-packages)
     - [Installing a Prebuilt `Ubuntu` Package from an Ubuntu Repository](#installing-a-prebuilt-ubuntu-package-from-an-ubuntu-repository)
     - [Installing a Prebuilt `Ubuntu` Package from the Official NGINX Repository](#installing-a-prebuilt-ubuntu-package-from-the-official-nginx-repository)
+    - [Cài đặt NGINX Plus trên Google Cloud Platform](#cài-đặt-nginx-plus-trên-google-cloud-platform)
+    - [Cài đặt NGINX Plus trên Microsoft Azure](#cài-đặt-nginx-plus-trên-microsoft-azure)
+    - [Triển khai NGINX và NGINX Plus trên Docker](#triển-khai-nginx-và-nginx-plus-trên-docker)
 ## Overview
 - Nginx Plus là phiên bản trả phí của Nginx sử dụng cùng một mã nguồn mở miễn phí NGINX Plus hỗ trợ một số phần mở rộng khác
 
@@ -55,7 +58,7 @@ Trong đó
 
 Phần `/mainline `tử trong tên đường dẫn trỏ đến phiên bản dòng chính mới nhất của NGINX Open Source; xóa nó để có phiên bản ổn định mới nhất
 
-`OS`là một trong hai rhelhoặccentos
+`OS` là một trong hai rhel hoặcc entos
 
 `OSRELEASE`là số phát hành ( ,, 6v.v. )6._x_77._x_
 
@@ -201,3 +204,9 @@ $ curl -I 127.0.0.1
 HTTP/1.1 200 OK
 Server: nginx/1.13.8
 ```
+### Cài đặt NGINX Plus trên Google Cloud Platform
+- overview
+### Cài đặt NGINX Plus trên Microsoft Azure
+- overview
+### Triển khai NGINX và NGINX Plus trên Docker
+- overview
