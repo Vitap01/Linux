@@ -86,7 +86,7 @@ location /some/path/ {
 
 ```
 location / {
-            proxy_pass http://192.168.92.100/;
+            proxy_pass http://192.168.68.99/;
         }
 ```
 => người dùng truy cập: http://192.168.68.99/ (location ở đây là `/`) sẽ được chuyển đến đỉa chỉ http://123.31.31.218/
