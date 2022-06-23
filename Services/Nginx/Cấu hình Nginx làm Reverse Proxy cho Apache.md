@@ -6,7 +6,7 @@
   - [4. Kiểm tra:](#4-kiểm-tra)
 ## 1.Mô hình mạng
 
-![Imgur](https://i.imgur.com/MDV8aP5.png)
+![Imgur](https://i.imgur.com/JzYvZ4R.png)
 
 ## 2. Cài đặt Nginx
 Install the prerequisites:
@@ -69,7 +69,7 @@ echo 'server {
         proxy_set_header         Host $http_host;
 
         location / {
-            proxy_pass http://123.31.31.218/;
+            proxy_pass http://172.16.56.144/;
         }
     }' >> /etc/nginx/conf.d/test.conf
 ```
@@ -86,10 +86,10 @@ location /some/path/ {
 
 ```
 location / {
-            proxy_pass http://192.168.68.99/;
+            proxy_pass http://172.16.56.144/;
         }
 ```
-=> người dùng truy cập: http://192.168.68.99/ (location ở đây là `/`) sẽ được chuyển đến đỉa chỉ http://123.31.31.218/
+=> người dùng truy cập: http://192.168.68.99/ (location ở đây là `/`) sẽ được chuyển đến đỉa chỉ http://172.56.56.144/
 
 - `proxy_set_header X-Real-IP`: Truyền Real IP của client vào header khi gửi request đến Backend Apache.
 - `proxy_set_header X-Forwarded-For`: Mặc định client request thì thông tin sẽ chỉ giao tiếp với reverse proxy, vì vậy mà thông tin log của Backend server (Apache web server) sẽ chỉ nhận được là địa chỉ IP của Nginx proxy. Để ghi nhận địa chỉ IP thực của client vào backend web server, chúng ta sử dụng tham số: “proxy_set_header X-Forwarded-For”
@@ -135,14 +135,14 @@ systemctl enable httpd
 
 Tạo trang test đơn giản:
 ```
-echo 'Luc Tuan Nam aka Vitap Apache server test NGINX-Proxy' >> /var/www/html/index.html
+echo 'Luc tuan nam aka vitap Apache server test NGINX-Proxy' >> /var/www/html/index.html
 ```
 
 ## 4. Kiểm tra:
 - Truy cập : http://192.168.68.99
 - Kết quả:
 
-![Imgur](https://i.imgur.com/BLTvtXo.png)
+![Imgur](https://i.imgur.com/hSG7drR.png)
 
 Tài liệu tham khảo :
 https://www.server-world.info/en/note?os=CentOS_7&p=nginx&f=6
